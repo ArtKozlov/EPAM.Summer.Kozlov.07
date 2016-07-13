@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 
 namespace Task02
 {
@@ -62,5 +63,24 @@ namespace Task02
 
         public override string ToString() => $"Book {Title} published in {YearOfPublish} by {Author} and has {Pages} pages.";
 #endregion
+
+        public static Book[] Sort(Book[] books, ISortBooksArray comparer)
+        {
+            if (ReferenceEquals(null, books) || ReferenceEquals(null, comparer))
+                throw new NullReferenceException();
+            for (int i = 0; i < books.Length - 1; i++)
+            {
+                if (comparer.Compare(books[i], books[i + 1]))
+                    Swap(ref books, i);
+            }
+            return books;
+        }
+
+        private static void Swap(ref Book[] books, int i)
+        {
+            Book temp = books[i];
+            books[i] = books[i + 1];
+            books[i + 1] = temp;
+        }
     }
 }
