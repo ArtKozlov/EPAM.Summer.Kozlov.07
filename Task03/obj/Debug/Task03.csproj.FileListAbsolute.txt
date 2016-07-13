@@ -1,0 +1,4 @@
+D:\Epam\EPAM.Summer.Kozlov.07\Task03\bin\Debug\Task03.dll
+D:\Epam\EPAM.Summer.Kozlov.07\Task03\bin\Debug\Task03.pdb
+D:\Epam\EPAM.Summer.Kozlov.07\Task03\obj\Debug\Task03.dll
+D:\Epam\EPAM.Summer.Kozlov.07\Task03\obj\Debug\Task03.pdb
