@@ -8,6 +8,9 @@ namespace Task02
 {
     public class CompareByAuthor: ISortBooksArray
     {
+        /// <summary>
+        /// Method use author property of books for compare.
+        /// </summary>
         public bool Compare(Book lhs, Book rhs)
         {
             if (ReferenceEquals(null, lhs) || ReferenceEquals(null, rhs))

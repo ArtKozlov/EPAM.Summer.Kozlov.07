@@ -8,7 +8,9 @@ namespace Task02
 {
     class CompareByPublish: ISortBooksArray
     {
-
+        /// <summary>
+        /// Method use year of publish books for compare.
+        /// </summary>
         public bool Compare(Book lhs, Book rhs)
         {
             if (ReferenceEquals(null, lhs) || ReferenceEquals(null, rhs))

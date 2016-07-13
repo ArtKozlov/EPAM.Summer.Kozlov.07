@@ -8,7 +8,9 @@ namespace Task02
 {
     class CompareByPages: ISortBooksArray
     {
-
+        /// <summary>
+        /// Method use pages property of books for compare.
+        /// </summary>
         public bool Compare(Book lhs, Book rhs)
         {
             if (ReferenceEquals(null, lhs) || ReferenceEquals(null, rhs))
