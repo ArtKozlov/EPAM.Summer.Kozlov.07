@@ -58,15 +58,9 @@ namespace Task02
             return Equals(book);
         }
 
-        public override int GetHashCode()
-        {
-            return ToString().GetHashCode();
-        }
+        public override int GetHashCode() => ToString().GetHashCode();
 
-        public override string ToString()
-        {
-            return $"Book {Title} published in {YearOfPublish} by {Author} and has {Pages} pages.";
-        }
+        public override string ToString() => $"Book {Title} published in {YearOfPublish} by {Author} and has {Pages} pages.";
 #endregion
     }
 }
