@@ -27,11 +27,11 @@ namespace Task03
         /// Method using for  find a perimeter of figure.
         /// </summary>
         /// <returns>returns a number in double format.</returns>
-        public override double Perimeter() => ASide + BSide + CSide;
+        public override double GetPerimeter() => ASide + BSide + CSide;
         /// <summary>
         /// Method using for  find a area of figure.
         /// </summary>
         /// <returns>returns a number in double format.</returns>
-        public override double Area() => (ASide * Height) / 2;
+        public override double GetArea() => (ASide * Height) / 2;
     }
 }

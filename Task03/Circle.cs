@@ -21,11 +21,11 @@ namespace Task03
         /// Method using for  find a perimeter of figure.
         /// </summary>
         /// <returns>returns a number in double format.</returns>
-        public override double Perimeter() => 2 * Radius * Math.PI;
+        public override double GetPerimeter() => 2 * Radius * Math.PI;
         /// <summary>
         /// Method using for  find a area of figure.
         /// </summary>
         /// <returns>returns a number in double format.</returns>
-        public override double Area() => Math.PI * Math.Pow(Radius, 2);
+        public override double GetArea() => Math.PI * Math.Pow(Radius, 2);
     }
 }

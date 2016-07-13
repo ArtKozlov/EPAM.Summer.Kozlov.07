@@ -12,11 +12,11 @@ namespace Task03
         /// Method using for  find a perimeter of figure.
         /// </summary>
         /// <returns>returns a number in double format.</returns>
-        public abstract double Perimeter();
+        public abstract double GetPerimeter();
         /// <summary>
         /// Method using for  find a area of figure.
         /// </summary>
         /// <returns>returns a number in double format.</returns>
-        public abstract double Area();
+        public abstract double GetArea();
     }
 }
