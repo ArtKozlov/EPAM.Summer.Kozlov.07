@@ -94,14 +94,14 @@ namespace Task02
             for (int i = 0; i < books.Length - 1; i++)
             {
                 if (comparer.Compare(books[i], books[i + 1]))
-                    Swap(ref books, i);
+                    Swap(ref books, ref i);
             }
             return books;
         }
         /// <summary>
         /// Swap books in array of books.
         /// </summary>
-        private static void Swap(ref Book[] books, int i)
+        private static void Swap(ref Book[] books, ref int i)
         {
             Book temp = books[i];
             books[i] = books[i + 1];

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task03
 {
-    class Circle: Figure
+    class Circle: IShape
     {
         public double Radius { get; }
         /// <summary>
@@ -21,11 +21,11 @@ namespace Task03
         /// Method using for  find a perimeter of figure.
         /// </summary>
         /// <returns>returns a number in double format.</returns>
-        public override double GetPerimeter() => 2 * Radius * Math.PI;
+        public double GetPerimeter() => 2 * Radius * Math.PI;
         /// <summary>
         /// Method using for  find a area of figure.
         /// </summary>
         /// <returns>returns a number in double format.</returns>
-        public override double GetArea() => Math.PI * Math.Pow(Radius, 2);
+        public double GetArea() => Math.PI * Math.Pow(Radius, 2);
     }
 }

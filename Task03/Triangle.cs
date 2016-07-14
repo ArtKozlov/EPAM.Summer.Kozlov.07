@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task03
 {
-    public class Triangle: Figure
+    public class Triangle: IShape
     {
         public double ASide { get; }
         public double BSide { get; }
@@ -27,11 +27,11 @@ namespace Task03
         /// Method using for  find a perimeter of figure.
         /// </summary>
         /// <returns>returns a number in double format.</returns>
-        public override double GetPerimeter() => ASide + BSide + CSide;
+        public double GetPerimeter() => ASide + BSide + CSide;
         /// <summary>
         /// Method using for  find a area of figure.
         /// </summary>
         /// <returns>returns a number in double format.</returns>
-        public override double GetArea() => (ASide * Height) / 2;
+        public double GetArea() => (ASide * Height) / 2;
     }
 }

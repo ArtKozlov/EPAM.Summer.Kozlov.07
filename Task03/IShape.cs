@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace Task03
 {
-    public abstract class Figure
+    interface IShape
     {
         /// <summary>
         /// Method using for  find a perimeter of figure.
         /// </summary>
         /// <returns>returns a number in double format.</returns>
-        public abstract double GetPerimeter();
+        double GetPerimeter();
         /// <summary>
         /// Method using for  find a area of figure.
         /// </summary>
         /// <returns>returns a number in double format.</returns>
-        public abstract double GetArea();
+        double GetArea();
     }
 }
