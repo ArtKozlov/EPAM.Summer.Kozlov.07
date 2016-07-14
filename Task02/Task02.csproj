@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayOfBooks.cs" />
     <Compile Include="Book.cs" />
     <Compile Include="CompareByPages.cs" />
     <Compile Include="CompareByPublish.cs" />

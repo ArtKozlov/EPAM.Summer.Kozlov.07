@@ -8,6 +8,6 @@ namespace Task02
 {
     public interface ISortBooksArray
     {
-        bool Compare(Book lhs, Book rhs);
+        int Compare(Book lhs, Book rhs);
     }
 }

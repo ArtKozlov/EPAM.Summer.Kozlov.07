@@ -11,13 +11,15 @@ namespace Task02
         /// <summary>
         /// Method use author property of books for compare.
         /// </summary>
-        public bool Compare(Book lhs, Book rhs)
+        public int Compare(Book lhs, Book rhs)
         {
             if (ReferenceEquals(null, lhs) || ReferenceEquals(null, rhs))
-                throw new NullReferenceException();
+                throw new ArgumentNullException();
             if (string.Compare(lhs.Author, rhs.Author) == 1)
-                return true;
-            return false;
+                return 1;
+            if (string.Compare(lhs.Author, rhs.Author) == 0)
+                return 0;
+            return -1;
         }
     }
 }
